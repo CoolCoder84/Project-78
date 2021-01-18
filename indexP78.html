@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Project-78</title>
+  </head>
+  <body>
+    <p id=Heading>Family Book</p>
+    <img  id="img" src="https://images-na.ssl-images-amazon.com/images/I/51KNpAKei-L.jpg">
+    <h3 id="name"></h3>
+    <div>
+      <button onclick="nextslide()">Next</button>
+    </div>
+    <script>var images = [
+         "http://clipart-library.com/newimages/boy-clipart-2.jpg",
+         "http://clipart-library.com/newimages/girl-clipart-1.jpg",
+         "http://clipart-library.com/newimages/man-clipart-2.jpg",
+         "http://clipart-library.com/new_gallery/woman-clipart-2.jpg",
+       ];
+       var i=0;
+       function nextslide(){
+         if (i == 4)
+         {
+           i=0;
+         }
+         document.getElementById("img") .src=images[i];
+         i++;
+
+         var names = [
+         "Me",
+         "Sister",
+         "Mother",
+         "Father",
+       ];
+
+
+         document.getElementById("name") .innerHTML=names[i];
+         i++;
+         
+       }</script>
+  </body>
+</html>
